@@ -1,0 +1,14 @@
+---
+- name: This is another demo for register
+  hosts: agent
+  tasks:
+    - name: uninstall httpd
+      yum: name=httpd state=absent
+      register: http_out
+
+    - name: printing complete output
+      debug: var=http_out
+
+    - name: printing specific reults for individual parameter
+      debug: var=http_out.changed 
+      debug: msg="this is a demo for msg"

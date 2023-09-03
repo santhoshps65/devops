@@ -1,0 +1,10 @@
+- name: add several users
+  hosts: agent
+  user:
+    name: "{{ item }}"
+    state: present
+    groups: "wheel"
+  loop:
+     - testuser1
+     - testuser2
+

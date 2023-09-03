@@ -1,0 +1,13 @@
+- name: Variable demo
+  hosts: agent
+  vars:
+    user1: testuser
+    user2: ""
+    uid1: 9876
+    uid2: 8765
+  tasks:
+    - name: Creating a user1
+      user: name={{user1}} uid={{uid1}} state=present
+    - name: Creating user {{user2}}
+      user: name={{user2}} uid={{uid2}} state=present
+

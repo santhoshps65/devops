@@ -1,0 +1,133 @@
+ 1013  ansible --version
+ 1014  vi /root/ansible.cfg
+ 1015  ls -ltr
+ 1016  rm ansible
+ 1017  rm ansible.cfg
+ 1018  ansible --version
+ 1019  vi /etc/ansible/ansible.cfg
+ 1020  cp /etc/ansible/ansible.cfg /root/
+ 1021  ansible --version
+ 1022  cd /tmp/
+ 1023  cp /etc/ansible/ansible.cfg .
+ 1024  pwd
+ 1025  ansible --version
+ 1026  cd
+ 1027  mkdir /mnt/storage
+ 1028  cp /etc/ansible/ansible.cfg /mnt/storage/
+ 1029  cd /mnt/storage/
+ 1030  ls
+ 1031  ansible --version
+ 1032  pwd
+ 1033  cd
+ 1034  cd /home/
+ 1035  ls
+ 1036  pwd
+ 1037  ansible --version
+ 1038  export ANSIBLE_CONFIG=/home/myuser123/ansible.cfg
+ 1039  echo $ANSIBLE_CONFIG
+ 1040  cp /etc/ansible/ansible.cfg /home/myuser123/ansible.cfg
+ 1041  ansible --version
+ 1042  echo $ANSIBLE_CONFIG
+ 1043  a=5
+ 1044  echo $a
+ 1045  cd
+ 1046  vi /etc/ansible/hosts
+ 1047  ansible master -m ping
+ 1048  ansible agent -m ping
+ 1049  ansible all -m ping
+ 1050  ansible localhost -m ping
+ 1051  vi /etc/ansible/hosts
+ 1052  ansible master -m ping
+ 1053  ssh master
+ 1054  pwd
+ 1055  cd .ssh
+ 1056  ls
+ 1057  rm id_rsa
+ 1058  rm id_rsa.pub
+ 1059  cd
+ 1060  ssh master
+ 1061  ansible master -m ping
+ 1062  vi /etc/ansible/hosts
+ 1063  ansible master -m ping --ask-pass
+ 1064  ssh-keygen
+ 1065  ssh-copy-id master
+ 1066  ansible master -m ping
+ 1067  ansible master -m ping --ask-pass
+ 1068  ansible agent -m ping
+ 1069  vi /etc/ansible/hosts
+ 1070  ansible agent -m ping
+ 1071  ansible agent -m ping --ask-pass
+ 1072  ssh-copy-id agent
+ 1073  ansible agent -m ping
+ 1074  ansible all -m ping
+ 1075  vi /etc/ansible/hosts
+ 1076  ansible-doc -l
+ 1077  ansible-doc -l | wc -l
+ 1078  ansible-doc -l | grep -i ping
+ 1079  vi /etc/ansible/hosts
+ 1080  ansible node-1 -m ping --ask-pass
+ 1081  vi /etc/ansible/hosts
+ 1082  ansible node-1 -m ping --ask-pass
+ 1083  ansible 172.31.5.71 -m ping --ask-pass
+ 1084  ssh 172.31.5.71
+ 1085  ansible 172.31.5.71 -m ping --ask-pass
+ 1086  ansible node-1 -m ping --ask-pass
+ 1087  vi /etc/ansible/hosts
+ 1088  ansible node-1 -m ping --ask-pass
+ 1089  ansible 172.31.5.71 -m ping --ask-pass
+ 1090  vi /etc/hosts
+ 1091  ansible node-1 -m ping --ask-pass
+ 1092  ssh node-1
+ 1093  ansible node-1 -m ping --ask-pass
+ 1094  ansible 172.31.5.71 -m ping --ask-pass
+ 1095  cat /etc/hosts
+ 1096  ssh-copy-id node-1
+ 1097  ansible 172.31.5.71 -m ping
+ 1098  ansible node-1 -m ping
+ 1099  vi /etc/ansible/hosts
+ 1100  ansible all -m ping
+ 1101  ansible master -m ping
+ 1102  ansible master -m ping --ask-pass
+ 1103  cat /etc/hosts
+ 1104  ansible agent -a "touch myfile"
+ 1105  ansible agent -a "touch myfile123"
+ 1106  ansible agent -m shell -a "uptime"
+ 1107  ansible all -m shell -a "uptime"
+ 1108  telnet
+ 1109  t> [root@agent ~]#
+ 1110  [root@agent ~]#
+ 1111  ansible all -m package -a "name=telnet state=installed"
+ 1112  ansible all -m dnf -a "name=telnet state=installed"
+ 1113  ansible all -m dnf -a "name=telnet state=absent"
+ 1114  cat /etc/os-release
+ 1115  python
+ 1116  python3
+ 1117  echo $PATH
+ 1118  which python3
+ 1119  export PATH=$PATH:/usr/bin/python3
+ 1120  echo $PATH
+ 1121  python
+ 1122  ansible all -m dnf -a "name=telnet state=installed"
+ 1123  echo $PATH
+ 1124  ansible all -m dnf -a "name=telnet state=installed"
+ 1125  vi /etc/ansible/ansible.cfg
+ 1126  ansible all -m dnf -a "name=telnet state=installed"
+ 1127  vi /etc/ansible/hosts
+ 1128  ansible all -m dnf -a "name=telnet state=installed"
+ 1129  ansible all -m user -a "name=testuser uid=9999 state=present"
+ 1130  present"nt | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": true,
+    "comment": "",
+ 1131  ansible all -m user -a "name=testuser uid=9999 state=absent"
+ 1132  ansible all -m file -a "path=/tmp/myfile mode=777 group=root owner=root state=touch"
+ 1133  ansible agent -m shell -a "ls;uname -a"
+ 1134  ansible agent -m shell -a "useradd testuser123456"
+ 1135  #ansible all -m user -a "name=testuser uid=9999 state=absent"
+ 1136  ls
+ 1137  uname -a
+ 1138  ansible agent -m shell -a "useradd salil;touch abcd"
+ 1139  ansible-doc -v user
+ 1140  ansible-doc -v file

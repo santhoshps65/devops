@@ -1,0 +1,12 @@
+- hosts: ['agent']
+  vars_files:
+    - var.yaml
+  vars:
+    srvc:
+    - mariadb
+    - vsftpd
+  tasks:
+    - yum: name={{item}} state=absent
+      loop: "{{pkg}}"
+    - service: name={{item}} state=stopped
+      with_items: "{{srvc}}"

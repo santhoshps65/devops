@@ -1,0 +1,173 @@
+ 1005  docker contianer run -d --name testcont ubuntu
+ 1006  docker container run -d --name testcont ubuntu
+ 1007  docker container run -d --name testcont1 ubuntu
+ 1008  docker system prune
+ 1009  docker container run -d --name testcont1 ubuntu
+ 1010  docker container ls
+ 1011  docker container run -d --name testcont2 ubuntu bash
+ 1012  docker container ls
+ 1013  docker container run -d --name testcont2 ubuntu tail -f /dev/null
+ 1014  docker container run -d --name testcont3 ubuntu tail -f /dev/null
+ 1015  docker container run -d --name testcont4 nginx
+ 1016  docker container ls
+ 1017  docker container run -d --name testcont3 ubuntu tail -f /dev/null
+ 1018  docker container ls
+ 1019  docker-compose --version
+ 1020  mvn --version
+ 1021  wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+ 1022  sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+ 1023  yum install -y apache-maven
+ 1024  mvn --version
+ 1025  docker --version
+ 1026  git --version
+ 1027  ls
+ 1028  mvn archetype:generate
+ 1029  ls
+ 1030  ls -ltr
+ 1031  cd demo
+ 1032  ls
+ 1033  tree
+ 1034  yum install tree
+ 1035  tree
+ 1036  ls
+ 1037  ls -ltr
+ 1038  tree
+ 1039  tree
+ 1040  vi src/main/java/intellipaat/App.java
+ 1041  mvn compile
+ 1042  tree
+ 1043  mvn test
+ 1044  tree
+ 1045  mvn package
+ 1046  tree
+ 1047  ls
+ 1048  cd  target/
+ 1049  ls
+ 1050  java -jar demo-1.0-SNAPSHOT.jar
+ 1051  cd ..
+ 1052  vi src/main/java/intellipaat/App.java
+ 1053  cd ..
+ 1054  ls
+ 1055  cd  demo/
+ 1056  ls
+ 1057  mvn clean
+ 1058  ls
+ 1059  #mvn compile ; mvn test ; mvn package
+ 1060  ls
+ 1061  tree
+ 1062  mvn install
+ 1063  ls
+ 1064  tree
+ 1065  ls
+ 1066  cat src/main/java/intellipaat/App.java
+ 1067  ls
+ 1068  cd src/
+ 1069  s
+ 1070  ls
+ 1071  cd main/
+ 1072  ls
+ 1073  cd java/
+ 1074  ls
+ 1075  cd intellipaat/
+ 1076  ls
+ 1077  ca App.java
+ 1078  cat App.java
+ 1079  pwd
+ 1080  cd ../../../../target/
+ 1081  ls
+ 1082  java -jar demo-1.0-SNAPSHOT.jar
+ 1083  rpm -qa | grep jdk
+ 1084  yam install java
+ 1085  yum install java
+ 1086  ls
+ 1087  cd ..
+ 1088  ls
+ 1089  vi pom.xml
+ 1090  vi pom.xml
+ 1091  ls
+ 1092  vi pom.xml
+ 1093  curl google.com
+ 1094  cd
+ 1095  ls -lra
+ 1096  cd .m2
+ 1097  ls
+ 1098  cd  repository/
+ 1099  ls
+ 1100  cd
+ 1101  cd -
+ 1102  pwd
+ 1103  cd
+ 1104  ls -ltr
+ 1105  cd demo/
+ 1106  ls
+ 1107  vi pom.xml
+ 1108  tree
+ 1109  vi pom.xml
+ 1110  ls
+ 1111  vi pom.xml
+ 1112  cd
+ 1113  cd .m2/
+ 1114  ls
+ 1115  pwd
+ 1116  cd repository/
+ 1117  ls
+ 1118  pwd
+ 1119  ls
+ 1120  cd
+ 1121  cd demo/
+ 1122  tree
+ 1123  history
+ 1124  cd
+ 1125  git clone https://github.com/salilkul/java-project.git
+ 1126  cd  java-project/
+ 1127  ls
+ 1128  tree
+ 1129  cat Dockerfile
+ 1130  ls
+ 1131  vi Jenkinsfile
+ 1132  mvn clean package && cp target/*.jar .
+ 1133  ls
+ 1134  pwd
+ 1135  ls
+ 1136  cat Dockerfile
+ 1137  ls
+ 1138  mv myproject-0.0.1-SNAPSHOT.jar /tmp/
+ 1139  ls
+ 1140  docker  build -t mvn .
+ 1141  ls
+ 1142  cat Dockerfile
+ 1143  mv /tmp/myproject-0.0.1-SNAPSHOT.jar .
+ 1144  ls
+ 1145  docker  build -t mvn .
+ 1146  docker container run -d --name mvncont mvn
+ 1147  docker container ls
+ 1148  docker logs  dd08348b9418
+ 1149  ls
+ 1150  cd src/
+ 1151  ls
+ 1152  cd main/
+ 1153  ls
+ 1154  cd java/
+ 1155  ls
+ 1156  cd learning/
+ 1157  ls
+ 1158  cd myproject/
+ 1159  ls
+ 1160  at DummyApplication.java
+ 1161  cat DummyApplication.java
+ 1162  docker container ls
+ 1163  docker container rm -f mvncont
+ 1164  ls
+ 1165  cd ..
+ 1166  ls
+ 1167  cd ..
+ 1168  cd ..
+ 1169  cd ..
+ 1170  ld
+ 1171  cd ..
+ 1172  ls
+ 1173  ls
+ 1174  ls
+ 1175  cat Dockerfile
+ 1176  #docker  build -t mvn .
+ 1177  #docker container run -d --name mvncont mvn

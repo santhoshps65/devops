@@ -1,0 +1,4 @@
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install vim curl -y && apt-get install nginx -y
+LABEL app=nginx
+CMD ["nginx", "-g", "daemon off;"]

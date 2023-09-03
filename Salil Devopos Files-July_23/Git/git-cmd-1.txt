@@ -1,0 +1,75 @@
+    4  yum install git
+    5  clear
+    6  git --version
+    7  ls
+    8  mkdir demo
+    9  cd demo
+   10  pwd
+   11  useradd salil
+   12  su - salil
+   13  clear
+   14  ls
+   15  ls -ltr
+   16  ll
+   17  clear
+   18  ls -ltr
+   19  vi 1.txt
+   20  ls -ltr
+   21  ls
+   22  ls -l
+   23  ls -ltr
+   24  git add 1.txt
+   25  clear
+   26  ls -ltr
+   27  git add 1.txt
+   28  pwd
+   29  git init
+   30  ls -ltr
+   31  ls -ltra
+   32  cd . git
+   33  cd .git
+   34  ls
+   35  cd ..
+   36  clear
+   37  ls -ltra
+   38  pwd
+   39  cd ..
+   40  pwd
+   41  cd -
+   42  pwd
+   43  ls -ltra
+   44  ls -ltr
+   45  ls
+   46  cat /etc/passwd
+   47  w
+   48  clear
+   49  ls -ltr
+   50  pwd
+   51  ls -ltr
+   52  git status
+   53  git add 1.txt
+   54  git status
+   55  ls -ltr
+   56  git status
+   57  git commit -m "first commit" 1.txt
+   58  git config --global user.name "Salil"
+   59  git config --global user.email "demo@gmai.com"
+   60  git commit -m "first commit" 1.txt
+   61  ls -ltr
+   62  git status
+   63  ls -ltr
+   64  git log
+   65  clear
+   66  ls -ltr
+   67  vi 2.txt
+   68  git status
+   69  git add 2.txt
+   70  git status
+   71  vi 2.txt
+   72  git status
+   73  git add 2.txt
+   74  git status
+   75  git commit "scond commit" .
+   76  git commit 2.txt
+   77  git commit -m "scond commit" 2.txt
+   78  git status

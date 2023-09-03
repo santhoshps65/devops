@@ -1,0 +1,282 @@
+ 1010  docker --version
+ 1011  systemctl start docker
+ 1012  systemctl status docker
+ 1013  systemctl stop docker
+ 1014  systemctl status docker
+ 1015  systemctl start docker
+ 1016  systemctl status docker
+ 1017  docker container run ubuntu
+ 1018  docker container ls
+ 1019  docker ps
+ 1020  docker container ls
+ 1021  docker container ls -a
+ 1022  docker container ls
+ 1023  docker container ls -a
+ 1024  docker container run ubuntu
+ 1025  docker container ls -a
+ 1026  docker container run -it ubuntu
+ 1027  docker container ls -a
+ 1028  docker container run -it ubuntu
+ 1029  docker container run -d ubuntu
+ 1030  docker container ls -a
+ 1031  docker container run -d ubuntu sleep 3000
+ 1032  docker container ls -a
+ 1033  docker container ls
+ 1034  docker container run -d --name test ubuntu
+ 1035  docker container ls
+ 1036  docker container run -d --name test ubuntu sleep 4000
+ 1037  docker container ls -a
+ 1038  docker container run -d --name testcont ubuntu sleep 4000
+ 1039  docker container ls -a
+ 1040  docker container ls
+ 1041  docker container run -d --name testcont ubuntu sleep 4000
+ 1042  docker container run -d --name testcont1 ubuntu sleep 4000
+ 1043  docker container run -it --name testcont2 ubuntu sleep 4
+ 1044  docker container ls
+ 1045  docker container ls -a
+
+  961  docker --version
+  962  systemctl start docker
+  963  systemctl status docker
+  964  systemctl stop docker
+  965  systemctl status docker
+  966  systemctl start docker
+  967  systemctl status docker
+  968  docker container run ubuntu
+  969  docker container ls
+  970  docker ps
+  971  docker container ls
+  972  docker container ls -a
+  973  docker container ls
+  974  docker container ls -a
+  975  docker container run ubuntu
+  976  docker container ls -a
+  977  docker container run -it ubuntu
+  978  docker container ls -a
+  979  docker container run -it ubuntu
+  980  docker container run -d ubuntu
+  981  docker container ls -a
+  982  docker container run -d ubuntu sleep 3000
+  983  docker container ls -a
+  984  docker container ls
+  985  docker container run -d --name test ubuntu
+  986  docker container ls
+  987  docker container run -d --name test ubuntu sleep 4000
+  988  docker container ls -a
+  989  docker container run -d --name testcont ubuntu sleep 4000
+  990  docker container ls -a
+  991  docker container ls
+  992  docker container run -d --name testcont ubuntu sleep 4000
+  993  docker container run -d --name testcont1 ubuntu sleep 4000
+  994  docker container run -it --name testcont2 ubuntu sleep 4
+  995  docker container ls
+  996  docker container ls -a
+  997  visudo
+  998  sudo su -
+  999  history
+ 1000  docker container ls
+ 1001  docker container ls -a
+ 1002  docker ps
+ 1003  docker ps -a
+ 1004  docker container run -d --name test3 openjdk
+ 1005  docker image ls
+ 1006  docker images
+ 1007  docker image ls
+ 1008  docker container run -d --name test3 openjdk
+ 1009  docker container ls
+ 1010  docker container ls -a
+ 1011  docker container run -d --name test4 openjdk sleep 600
+ 1012  docker container ls
+ 1013  docker container run -it --name test5 openjdk
+ 1014  docker container run -d --name test6 nginx
+ 1015  docker container ls
+ 1016  yum install nginx
+ 1017  systemctl start nginx
+ 1018  journalctl -xeu nginx.service
+ 1019  netstat -tulnp | grep 80
+ 1020  ps -ef | grep 1915
+ 1021  kill -9 1915
+ 1022  systemctl start nginx
+ 1023  systemctl status nginx
+ 1024  #yum install nginx
+ 1025  #systemctl start nginx
+ 1026  #docker container run -d --name test6 nginx
+ 1027  systemctl start nginx
+ 1028  systemctl status nginx
+ 1029  docker container ls
+ 1030  yum install apache
+ 1031*
+ 1032*
+ 1033* yum install xyz
+ 1034  docker container run -d --name test7 tomcat
+ 1035  docker container ls
+ 1036  docker image pull python
+ 1037  docker image ls
+ 1038  docker container ls
+ 1039  docker container stop bcc38ac69cfd
+ 1040  docker container ls
+ 1041  systemctl stop nginx
+ 1042  docker container start bcc38ac69cfd
+ 1043  docker container ls
+ 1044  docker container pause test6
+ 1045  docker container ls
+ 1046  docker container unpause test6
+ 1047  docker container ls
+ 1048  docker container rm test6
+ 1049  docker container stop bcc38ac69cfd
+ 1050  docker container rm test6
+ 1051  docker container ls
+ 1052  docker container stop 8168
+ 1053  docker container ls
+ 1054  docker container ls -a
+ 1055  docker container rm 8168
+ 1056  docker container ls -a
+ 1057  docker container ls
+ 1058  docker container ls -a
+ 1059  docker container rm 5c5ee968cb7c 073122da2c2e
+ 1060  docker container rm $(docker ps -aq)
+ 1061  docker container ls -a
+ 1062  docker container run -d --name testcont nginx
+ 1063  docker contianer ls
+ 1064  docker container ls
+ 1065  docker container stop testcont
+ 1066  docker container ls
+ 1067  docker container ls -a
+ 1068  docker container start testcont
+ 1069  docker container ls -a
+ 1070  docker container ls
+ 1071  docker container rm 6d45
+ 1072  docker container rm -f 6d45
+ 1073  docker container ls
+ 1074  docker container ls -a
+ 1075  docker container run -d --name testcont nginx
+ 1076  docker container ls
+ 1077  docker container pause f6043215b609
+ 1078  docker container ls
+ 1079  docker container unpause f6043215b609
+ 1080  docker container ls
+ 1081  docker container rename testcont nginxcont
+ 1082  docker container ls
+ 1083  docker container rename nginxcont testcont
+ 1084  docker container ls
+ 1085  docker containet exec -it testcont /bin/bash
+ 1086  docker container exec -it testcont /bin/bash
+ 1087  docker container exec -it testcont /bin/sh
+ 1088  cat /etc/shells
+ 1089  docker container exec  testcont /bin/sh
+ 1090  docker container exec -i testcont /bin/sh
+ 1091  docker container exec -t testcont /bin/sh
+ 1092  docker container exec -it testcont /bin/sh
+ 1093  docker container exec -it testcont /bin/bash
+ 1094  ps -ef
+ 1095  docker container exec -it testcont /bin/bash
+ 1096  man ps
+ 1097  man ls
+ 1098  docker container exec -it testcont /bin/bash
+ 1099  ps
+ 1100  docker container exec -it testcont /bin/bash
+ 1101  docker container ls
+ 1102  docker container ls  -a
+ 1103  #systemctl start nginx
+ 1104  ps -ef | grep 1
+ 1105  top
+ 1106  docker container ls
+ 1107  docker container ls -a
+ 1108  docker container start testcont
+ 1109  docker container ls
+ 1110  systemctl status docker
+ 1111  cd /var/lib/docker
+ 1112  ls
+ 1113  docker container ls -a
+ 1114  cd  containers/
+ 1115  ls
+ 1116  cd f6043215b6092af3466c2f10e333d2617ad96d6b8c37c413b2c5ee36f7620317
+ 1117  ls
+ 1118  cd ..
+ 1119  docker image ks
+ 1120  docker image ls
+ 1121  cd ../image/
+ 1122  ls
+ 1123  cd overlay2/
+ 1124  ls
+ 1125  cd imagedb/
+ 1126  ls
+ 1127  docker image ls
+ 1128  ls
+ 1129  cd content/sha256/
+ 1130  ls
+ 1131  ls -ltr
+ 1132  ls
+ 1133  doker image ls -a
+ 1134  docker image ls -a
+ 1135  pdw
+ 1136  pwd
+ 1137  cd
+ 1138  df  -h
+ 1139  mkdir /testdocker
+ 1140  vi /etc/daemon.json
+ 1141  cat /etc/daemon.json
+ 1142  docker --version
+ 1143  docker container run -d --name testcont1 ninx
+ 1144  docker container run -d --name testcont1 nginx
+ 1145  docker container ls
+ 1146  cd /var/lib/docker/containers/
+ 1147  ls
+ 1148  systemctl restart docker
+ 1149  systemctl status docker
+ 1150  docker container run -d --name testcont2 nginx
+ 1151  docker container ls
+ 1152  cd /var/lib/docker/containers/
+ 1153  ls
+ 1154  vi /etc/daemon.json
+ 1155  systemctl restart docker
+ 1156  systemctl status docker
+ 1157  docker container run -d --name testcont3 nginx
+ 1158  cd /var/lib/docker/containers/
+ 1159  ls
+ 1160  cat /etc/daemon.json
+ 1161  ls -ld /testdocker/
+ 1162  cd  /testdocker/
+ 1163  ls
+ 1164  chmod 777 /testdocker/
+ 1165  ls -ld /testdocker/
+ 1166  systemctl restart docker
+ 1167  systemctl daemon-reload
+ 1168  systemctl restart docker
+ 1169  docker container run -d --name testcont4 nginx
+ 1170  cd /var/lib/docker/containers/
+ 1171  ls
+ 1172  vi /etc/daemon.json
+ 1173  systemctl daemon-reload
+ 1174  systemctl restart docker
+ 1175  docker container run -d --name testcont4 nginx
+ 1176  docker container run -d --name testcont5 nginx
+ 1177  cd /var/lib/docker/containers/
+ 1178  ls
+ 1179  pwd
+ 1180  cat /etc/daemon.json
+ 1181  mount -t ext4 /testdocker/
+ 1182  df -h
+ 1183  df -hT
+ 1184  mount -t xfs /testdocker/
+ 1185  ls
+ 1186  docker contianer ls
+ 1187  docker container ls
+ 1188*
+ 1189  docker container ls
+ 1190  docker container run -d --name testcont4 nginx
+ 1191  docker container run -d --name testcont6 nginx
+ 1192  docker container ls
+ 1193  vi testfile
+ 1194  cat testfile
+ 1195  ls
+ 1196  rm testfile
+ 1197  cd
+ 1198  vi testfile
+ 1199  docker container ls
+ 1200  docker container cp testfile testcont6:/tmp/
+ 1201  docker container exec -it testcont6 bash
+ 1202  docker container cp  testcont6:/tmp/contfile .
+ 1203  ls
+ 1204  cat contfile
+

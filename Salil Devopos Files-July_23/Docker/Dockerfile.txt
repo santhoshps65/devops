@@ -1,0 +1,11 @@
+FROM ubuntu
+RUN apt-get update && apt-get install vim curl -y && apt-get install apache2 -y
+LABEL user=sk
+RUN useradd salil
+RUN useradd ganesh
+COPY index.html .
+ADD myfile.txt .
+COPY tmp.tar .
+ADD tmp.tar /var/www/
+USER salil
+WORKDIR /var/www/html

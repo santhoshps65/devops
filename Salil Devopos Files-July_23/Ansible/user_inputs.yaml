@@ -1,0 +1,11 @@
+- hosts: localhost
+  vars_prompt:
+    - name: Input1
+      prompt: "What is your  name?"
+      private: no
+    - name: Input2
+      prompt: "What is your city name?"
+     #private: no
+  tasks:
+    - debug:
+        msg: 'Your name: {{ Input1 }}. City name: {{ Input2 }}'

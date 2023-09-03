@@ -1,0 +1,109 @@
+  374  kubectl describe node server
+  375  kubectl describe no | grep -i taint
+  376  kubectl get no
+  377  kubectl taint node node-1 env=dev:NoSchedule
+  378  kubectl get no
+  379  kubectl describe no | grep -i taint
+  380  kubectl run new-pod --image=nginx
+  381  kubectl get po
+  382  kubectl describe po new-pod
+  383  kubectl get no
+  384  kubectl describe no | grep -i taint
+  385  cd k8/
+  386  ls
+  387  vi pod-toleration.yaml
+  388  kubectl apply -f pod-toleration.yaml
+  389  kubectl get po
+  390  kubectl get po -o wide
+  391  cat pod-toleration.yaml
+  392  kubectl get po -o wide
+  393  kubectl get no
+  394  kubectl cordon node-1
+  395  kubectl get no
+  396  kubectl get po -o wide
+  397  cp pod-toleration.yaml pod-toleration-2.yaml
+  398  vi pod-toleration-2.yaml
+  399  kubectl apply -f pod-toleration-2.yaml
+  400  kubectl get po -o wide
+  401  kubectl get no
+  402  kubectl uncordon node-1
+  403  kubectl get no
+  404  kubectl get po -o wide
+  405  kubectl get no
+  406  kubectl drain node-1
+  407  kubectl drain node-1 --ignore-daemonsets
+  408  #kubectl drain node-1 --ignore-daemonsets --force
+  409  kubectl get po
+  410  kubectl get n
+  411  kubectl get no
+  412  kubectl get po
+  413  kubectl drain node-1 --ignore-daemonsets --force
+  414  kubectl get po
+  415  kubectl get no
+  416  kubectl uncordon node-1
+  417  kubectl get no
+  418  kubectl describe no | grep -i taint
+  419  kubectl taint nodes node-1 env:NoSchedule-
+  420  kubectl cordon node-1
+  421  ls
+  422  kubectl get po -o wide
+  423  kubectl taint nodes node-1 env:test:NoExecute
+  424  kubectl taint nodes  env=test:NoExecute
+  425  kubectl get po -o wide
+  426  kubectl describe no | grep -i taint
+  427  kubectl get no
+  428  kubectl taint nodes server node-role.kubernetes.io:NoSchedule-
+  429  kubectl taint nodes server master:NoSchedule-
+  430  kubectl taint nodes server node-role.kubernetes.io/master:NoSchedule-
+  431  kubectl get no
+  432  kubectl uncordon node-1
+  433  kubectl get no
+  434  ls -ld /var/storage
+  435  mkdir -p /var/storage
+  436  ls -ld/var/storage
+  437  ls -ld /var/storage
+  438  df -h /var
+  439  vi pv.yml
+  440  vi pv.yaml
+  441  kubectl apply -f pv.yaml
+  442  kubectl get all
+  443  kubectl run test-pod --image=nginx
+  444  kubectl get all
+  445  kubectl get pv
+  446  vi pvc.yaml
+  447  kubectl apply -f pvc.yaml
+  448  kubectl get all
+  449  kubectl get pv
+  450  kubectl get pvc
+  451  vi pod-storage.yaml
+  452  kubectl apply -f pod-storage.yaml
+  453  kubectl get po
+  454  kubectl get po -o wide
+  455  cd /var/storage/
+  456  ls
+  457  kubectl exec -it mypod -- bash
+  458  kubectl get po -o wide
+  459  kubectl describe po mypod
+  460  kubectl get po -o wide
+  461  kubectl logs mypod
+  462  kubectl get po
+  463  kubectl delete po mypod
+  464  vi pod-storage.yaml
+  465  cd
+  466  cd k8/
+  467  vi pod-storage.yaml
+  468  cd /var/storage/
+  469  ls
+  470  rm -rf run/
+  471  ls
+  472  pwd
+  473  cd -
+  474  ls
+  475  kubectl apply -f pod-storage.yaml
+  476  kubectl get po
+  477  cd /var/storage/
+  478  ls
+  479  kubectl exec -it mypod -- bash
+  480  ls
+  481  ls -ltr
+  482  pwd

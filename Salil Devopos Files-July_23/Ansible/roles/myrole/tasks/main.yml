@@ -1,0 +1,8 @@
+---
+# tasks file for myrole
+- name: Creating {{user}}
+  user: name={{user}} uid={{uid}} state=present
+  register: outputs
+- name: Checking outputs
+  debug: var=outputs
+

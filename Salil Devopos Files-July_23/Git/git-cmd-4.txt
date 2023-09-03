@@ -1,0 +1,109 @@
+ 1010  git branch
+ 1011  git checkout master
+ 1012  git branch
+ 1013  git branch -d dev
+ 1014  git branch -D dev
+ 1015  git branch
+ 1016  ls
+ 1017  git checkout branch1
+ 1018  git branch user1
+ 1019  git branch user2
+ 1020  git branch
+ 1021  git checkout -b user3
+ 1022  git branch
+ 1023  git branch user4 user5 user6
+ 1024  git branch
+ 1025  #git checkout -b user3
+ 1026  #git branch user1
+ 1027  #git checkout user1
+ 1028  git branch
+ 1029  git checkout master
+ 1030  git branch -D user3
+ 1031  git branch
+ 1032  ls
+ 1033  git checkout user1
+ 1034  ls
+ 1035  vi onefile.txt
+ 1036  git branch
+ 1037  git checkout master
+ 1038  git merge user1
+ 1039  git checkout user1
+ 1040  git status
+ 1041  git add .
+ 1042  git commit -m "user1 commit" .
+ 1043  git checkout master
+ 1044  git merge user1
+ 1045  git checkout user2
+ 1046  vi onefile.txt
+ 1047  git add .
+ 1048  git commit -m "user2 changes" .
+ 1049  git branch
+ 1050  git chekcout master
+ 1051  git checkout master
+ 1052  git branch
+ 1053  git merge user2
+ 1054  cat onefile.txt
+ 1055  git branch
+ 1056  git checkout user2
+ 1057  git branch
+ 1058  git merge tool
+ 1059  gitmerge tool
+ 1060  git mergetool
+ 1061  ls -ltr
+ 1062  cat onefile.txt
+ 1063  cat onefile.txt.orig
+ 1064  rm onefile.txt.orig
+ 1065  ls -ltr
+ 1066  git status
+ 1067  git add .
+ 1068  git status
+ 1069  git add .
+ 1070  git status
+ 1071  git commit -m "final changes" .
+ 1072  git commit -m "final changes"
+ 1073  git status
+ 1074  cat onefile.txt
+ 1075  cd ..
+ 1076  ls
+ 1077  cd demo
+ 1078  ls
+ 1079  vi testfile.txt
+ 1080  git init
+ 1081  gti add .
+ 1082* git add
+ 1083  git commit -m "testcommit" .
+ 1084  git status
+ 1085  git brnch
+ 1086  git branch
+ 1087  ls
+ 1088  git checkout -b dev1
+ 1089  git checkout -b dev2
+ 1090  git branch
+ 1091  ls
+ 1092  vi testfile.txt
+ 1093  git add .
+ 1094  git commit-m "dev2 changes" .
+ 1095  git commit -m "dev2 changes" .
+ 1096  git checkout master
+ 1097  git merge dev2
+ 1098  cat testfile.txt
+ 1099  git checkout dev1
+ 1100  git pull origin dev1
+ 1101  cat testfile.txt
+ 1102  git branch
+ 1103  vi testfile.txt
+ 1104  git add .
+ 1105  git commit -m "dev1 changes" .
+ 1106  git status
+ 1107  git checkout master
+ 1108  git merge dev1
+ 1109  git mergetool
+ 1110  ls -ltr
+ 1111  cat testfile.txt
+ 1112  cat testfile.txt.orig
+ 1113  rm testfile.txt.orig
+ 1114  git add .
+ 1115  git commit -m "final changes" .
+ 1116  git commit -m "final changes"
+ 1117  git status
+ 1118  cat testfile.txt

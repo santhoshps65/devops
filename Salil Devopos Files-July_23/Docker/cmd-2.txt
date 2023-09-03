@@ -1,0 +1,194 @@
+  852  rpm -qa | grep docker
+  853  docker container run -d --name testcont nginx
+  854  docker container run -d --name testcont1 nginx
+  855  docker container ls -a
+  856  docker container rm -f testcont testcont1 testcont2 testcont3 testcont4 testcont5 testcont6
+  857  docker container run -d --name testcont nginx
+  858  docker container ls
+  859  docker container exec -it testcont bash
+  860  docker container ls
+  861  docker container rm -f testcont
+  862  docker container ls
+  863  docker container run -d --name testcont nginx
+  864  docker container exec -it testcont bash
+  865  docker pull nginx
+  866  ls
+  867  rm -rf rakesh/
+  868  rm -rf testfile
+  869  cd docker/
+  870  ls
+  871  vi Dockerfile
+  872  vi apache-Dockerfile
+  873  cd
+  874  ls
+  875  vi Dockerfile
+  876  docker image ls
+  877  docker image rm tomcat nginx myimg:10 busybox jenkins/jenkins:lts openjdk
+  878  docker image ls
+  879  docker image rm 448a08f1d2f9
+  880  docker container l
+  881  docker container rm -f 39c723333870
+  882  docker image rm 448a08f1d2f9
+  883  docker image ls
+  884  vi Dockerfile
+  885  docker build -t myimg .
+  886  docker image ls
+  887  cat Dockerfile
+  888  vi Dockerfile
+  889  docker build -t myimg:1 .
+  890  docker image ls
+  891  cat Dockerfile
+  892  vi Dockerfile
+  893  docker build -t myimg:2 .
+  894  vi Dockerfile
+  895  ls
+  896  cd /home/
+  897  ls
+  898  docker build -t myimg:2 .
+  899  docker build -t myimg:2 /root/Dockerfile
+  900  docker build -t myimg:2 /root/Dockerfile .
+  901  docker build -t myimg:2 -f /root/Dockerfile
+  902  docker build -t myimg:2 /root/
+  903  ls
+  904  cd
+  905  ls
+  906  mv Dockerfile somefile
+  907  ls
+  908  docker build -t myimg:2 .
+  909  docker build -t myimg:2 -f somefile .
+  910  ls
+  911  mv somefile Dockerfile
+  912  docker image ls
+  913  docker image pull nginx
+  914  ls
+  915  docker image ls
+  916  docker image history nginx
+  917  docker container run -it --name nginx nginx bash
+  918  vi Dockerfile
+  919  docker build -t myimg:3 .
+  920  docker image ls
+  921  cat Dockerfile
+  922  vi Dockerfile
+  923  docker build -t myimg:4 .
+  924  docker image ls
+  925  cat Dockerfile
+  926  vi Dockerfile
+  927  vi index.html
+  928  vi Dockerfile
+  929  ls
+  930  doker container ls
+  931  docker container ls
+  932  docker image ls
+  933  docker container run -d --name mycont1 myimg:4 bash
+  934  docker container ls
+  935  docker container ls -a
+  936  docker container rm -f mycont1 nginx unruffled_fermat
+  937  docker container run -d --name mycont1 myimg:4 sleep 6000
+  938  docker container ls
+  939  docker containet exec -it mycont1 bash
+  940  docker container exec -it mycont1 bash
+  941  ls
+  942  docker container cp index.html mycont1:/
+  943  docker container exec -it mycont1 bash
+  944  vi Dockerfile
+  945  docker build -t myimg:5 .
+  946  docker image ls
+  947  docker container run -d --name mycont1 myimg:5 sleep 6000
+  948  docker container run -d --name mycont2 myimg:5 sleep 6000
+  949  docker container exec -it mycont2 bash
+  950  docker container run -d --name mycont3 myimg:5 sleep 6000
+  951  docker container exec -it mycont3 bash
+  952  vi Dockerfile
+  953  ls
+  954  vi Dockerfile
+  955  ls
+  956  docker build -t myimg:5 .
+  957  vi Dockerfile
+  958  vi myfile.txt
+  959  ls
+  960  docker build -t myimg:6 .
+  961  docker image ls
+  962  docker container run -d --name mycont4 myimg:6 sleep 6000
+  963  docker container exec -it mycont4 bash
+  964  docker container run -d --name mycont5 myimg:5 sleep 6000
+  965  docker container exec -it mycont5 bash
+  966  docker image ls
+  967  docker image rm myimg:1 myimg:2 myimg:56
+  968  docker image ls
+  969  docker container ls
+  970  docker container rm -f mycont1 mycont2 mycont3 mycont4
+  971  docker container ls
+  972  docker image ls
+  973  vi Dockerfile
+  974  tar -cvzf tmp.tar /tmp
+  975  ls
+  976  vi Dockerfile
+  977  docker container run -d --name mycont5 myimg:6 sleep 6000
+  978  docker container run -d --name mycont6 myimg:6 sleep 6000
+  979  docker container exec -it mycont6 bash
+  980  docker build -t myimg:7 .
+  981  docker container run -d --name mycont7 myimg:7 sleep 6000
+  982  docker container exec -it mycont7 bash
+  983  vi Dockerfile
+  984  docker build -t myimg:8 .
+  985  docker container run -d --name mycont8 myimg:8 sleep 6000
+  986  cd /
+  987  ls
+  988  cd
+  989  ls
+  990  docker container exec -it mycont8 bash
+  991  cat Dockerfile
+  992  vi Dockerfile
+  993  docker build -t myimg:8 .
+  994  docker container run -d --name mycont8 myimg:8 sleep 6000
+  995  docker container run -d --name mycont9 myimg:8 sleep 6000
+  996  id salil
+  997  vi Dockerfile
+  998  docker build -t myimg:9 .
+  999  docker container run -d --name mycont10 myimg:9 sleep 6000
+ 1000  vi Dockerfile
+ 1001  docker build -t myimg:9 .
+ 1002  docker container run -d --name mycont11 myimg:9 sleep 6000
+ 1003  docker container exec -it mycont9 bash
+ 1004  docker container exec -it mycont11 bash
+ 1005  vi Dockerfile
+ 1006  docker build -t myimg:9 .
+ 1007  docker container run -it --name mycont12 myimg:9 sleep 6000
+ 1008  vi Dockerfile
+ 1009  docker build -t myimg:9 .
+ 1010  docker container run -it --name mycont12 myimg:9
+ 1011  docker container run -it --name mycont13 myimg:9
+ 1012*
+ 1013  vi Dockerfile
+ 1014  docker image ls
+ 1015  docker container run -it --name mycont12 myimg:9
+ 1016  docker container run -it --name mycont13 myimg:9
+ 1017  docker container run -it --name mycont14 myimg:9
+ 1018  vi Dockerfile
+ 1019  docker container run -it --name mycont15 myimg:9
+ 1020  vi Dockerfile
+ 1021  docker build -t myimg:10 .
+ 1022  docker container run -it --name mycont16 myimg:10
+ 1023  vi Dockerfile
+ 1024  docker build -t myimg:11 .
+ 1025  docker container run -it --name mycont17 myimg:10
+ 1026  docker container run -it --name mycont18 myimg:11
+ 1027  cat Dockerfile
+ 1028  docker image ls
+ 1029  vi Dockerfile
+ 1030  docker build -t myimg:11 .
+ 1031  docker image ls
+ 1032  vi Dockerfile
+ 1033  docker build -t myimg:11 .
+ 1034  docker image ls
+ 1035  docker image prune
+ 1036  docker image ls
+ 1037  docker image rm myimg:8
+ 1038  docker container rm -f 3d128a9dcee5
+ 1039  docker image rm myimg:8
+ 1040  docker image ls
+ 1041  docker image prune
+ 1042  docker system prune
+ 1043  docker image ls
+ 1044  docker system prune
+ 1045  cat Dockerfile

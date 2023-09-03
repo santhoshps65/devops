@@ -1,0 +1,105 @@
+ 129  vimdiff 1.txt  2.txt
+  130  diff 1.txt 2.txt
+  131  vimdiff 1.txt  2.txt
+  132  git log
+  133  clear
+  134  git log
+  135  ls -ltr
+  136  pwd
+  137  git remote add origin git@github.com:salilkul/testrepo.git
+  138  git branch
+  139  git push origin master
+  140  git remote add origin https://github.com/salilkul/testrepo.git
+  141  git push origin master
+  142  git remote -v
+  143  git remote rm origin
+  144  git remote add origin https://github.com/salilkul/testrepo.git
+  145  git push origin master
+  146  ls -ltr
+  147  git remote -v
+  148  git remote rm origin
+  149  git remote -v
+  150  vi 7.txt
+  151  git status
+  152  git add
+  153  git add .
+  154  ls -ltr
+  155  git status
+  156  git commit -m "7th commit" .
+  157  git status
+  158  git push origin master
+  159  git push https://github.com/salilkul/testrepo.git master
+  160  git remote -v
+  161  git remote add origin https://github.com/salilkul/testrepo.git
+  162  git remote -v
+  163  vi 8.txt
+  164  git add .
+  165  git commit -m "8th file" .
+  166  git push origin master
+  167  ls -ltr
+  168  clear
+  169  cd ..
+  170  ls -ltr
+  171  cd  test
+  172  mkdir test
+  173  cd test
+  174  ls -ltr
+  175  git init
+  176  clear
+  177  vi myfile.txt
+  178  git status
+  179  git add .
+  180  git status
+  181  git commit -m "my mesg" .
+  182  git status
+  183  ls -ltr
+  184  git remote add origin https://github.com/salilkul/myproj.git
+  185  git remote -v
+  186  git branch
+  187  git push origin branch
+  188  git push origin master
+  189  vi secondfile.txt
+  190  git add .
+  191  git commit -m "secondfile" .
+  192  git push origin master
+  192  git push origin master
+  193  history
+  194  ls -ltr
+  195  ls -l
+  196  ls
+  197  id
+  198  clear
+  199  ls -ltr
+  200  git branch
+  201  git branch dev
+  202  git branch
+  203  ls -ltr
+  204  git checkout dev
+  205  git branch
+  206  ls -ltr
+  207  git status
+  208  git push origin dev
+  209  git branch
+  210  git pull origin test
+  211  git status
+  212  git branch
+  213  git clone -b test https://github.com/salilkul/myproj.git
+  214  git branch
+  215  git checkout test
+  216  git branch
+  217  ls -ltr
+  218  rm -rf myproj/
+  219  ls -ltr
+  220  clear
+  221  git branch
+  222  ls -ltr
+  223  git pull origin feat1
+  224  git branch
+  225  git checkout feat1
+  226  ls -ltr
+  227  vi myfile.txt
+  228  git add .
+  229  git commit -m"my changes" .
+  230  ls -ltr
+  231  git push origin feat1
+

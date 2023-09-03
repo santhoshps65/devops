@@ -1,0 +1,21 @@
+---
+- name: Debug Playbook
+  hosts: agent
+    # gather_facts: no
+  tasks:
+    - name: Telnet package installation
+      yum: name=httpd state=present
+      register: output
+
+    - name: storing output in var
+      debug:
+        var: output
+    
+    - name: Running debugger 
+      debug:
+        msg: "machine name is {{ ansible_nodename }}"
+
+    - name: conditional check
+      debug:
+        msg: "setup completed successfully"
+      when: output.rc == 0

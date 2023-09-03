@@ -1,0 +1,256 @@
+ 1016  git clone https://github.com/salilkul/testrepo.git
+ 1017  ls
+ 1018  ls -ltr
+ 1019  date
+ 1020  cd testrepo/
+ 1021  cler
+ 1022  clear
+ 1023  ls -ltr
+ 1024  git branch
+ 1025  cd ..
+ 1026  rm -rf testrepo/
+ 1027  ls -ltr
+ 1028  git clone -b dev https://github.com/salilkul/testrepo.git
+ 1029  ls -ltr
+ 1030  cd testrepo/
+ 1031  git branch
+ 1032  cd ..
+ 1033  clear
+ 1034  rm -rf testrepo/
+ 1035  ls -ltr
+ 1036  git clone https://github.com/salilkul/testrepo.git
+ 1037  ls -ltr
+ 1038  cd  testrepo/
+ 1039  ls -ltr
+ 1040  clear
+ 1041  ls -ltr
+ 1042  cd ..
+ 1043  rm -rf testrepo
+ 1044  clear
+ 1045  ls -ltr
+ 1046  git clone https://github.com/salilkul/testrepo.git
+ 1047  cd  testrepo/
+ 1048  git branch
+ 1049  git checkout dev
+ 1050  git branch
+ 1051  ls -ltr
+ 1052  git status
+ 1053  cd ..
+ 1054  rm -rf testrepo/
+ 1055  git clone https://github.com/salilkul/testrepo.git
+ 1056  ls -ltr
+ 1057  cd testrepo/
+ 1058  ls -ltr
+ 1059  clear
+ 1060  git pull origin master
+ 1061  ls -ltr
+ 1062  git clone https://github.com/salilkul/testrepo.git
+ 1063  ls -ltr
+ 1064  cd  testrepo/
+ 1065  ls -ltr
+ 1066  cd ..
+ 1067  ls -ltr
+ 1068  rm -rf testrepo/
+ 1069  ls -ltr
+ 1070  git log
+ 1071  clear
+ 1072  git branch
+ 1073  ls -ltr
+ 1074  git pull orign master
+ 1075  git pull origin master
+ 1076  clear
+ 1077  ls -ltr
+ 1078  vi onefile.txt
+ 1079  git status
+ 1080  git add onefile.txt
+ 1081  git status
+ 1082  git restore --staged onefile.txt
+ 1083  git status
+ 1084  clear
+ 1085  git add onefile.txt
+ 1086  ls -ltr
+ 1087  git status
+ 1088  git commit -m "my commit" .
+ 1089  git status
+ 1090  clear
+ 1091  git status
+ 1092  git remote -v
+ 1093  ls -ltr
+ 1094  git push origin master
+ 1095  ls -ltr
+ 1096  git status
+ 1097  vi secondfile.txt
+ 1098  git add .
+ 1099  git commit -m "newfile" .
+ 1100  git status
+ 1101  l -ltr
+ 1102  ls -ltr
+ 1103  git push origin master
+ 1104  git branch
+ 1105  git pull origin dev
+ 1106  git branch
+ 1107  git checkout dev
+ 1108  ls -ltr
+ 1109  git pull origin dev
+ 1110  git branch
+ 1111  ls -ltr
+ 1112  git pull origin dev
+ 1113  ls -ltr
+ 1114  git branch
+ 1115  git checkout test
+ 1116  git pull origin test
+ 1117  git checkout test
+ 1118  ls -ltr
+ 1119  clear
+ 1120  git log
+ 1121  git log --oneline
+ 1122  git log
+ 1123  git branch
+ 1124  git checkout maser
+ 1125  git checkout master
+ 1126  ls -ltr
+ 1127  git status
+ 1128  git rm onefile.txt
+ 1129  git status
+ 1130  git commit -m "deleted the file" .
+ 1131  git status
+ 1132  ls -ltr
+ 1133  it log --oneline
+ 1134  git log --oneline
+ 1135  git revert 51a4675
+ 1136  ls -ltr
+ 1137  it status
+ 1138  git status
+ 1139  vi 11.txt
+ 1140  git status
+ 1141  git add .
+ 1142  git status
+ 1143  git restore --staged 11.txt
+ 1144  git status
+ 1145  git add .
+ 1146  git commit -m "11 file" .
+ 1147  git status
+ 1148  git log --oneline
+ 1149  git revert 5b1bbec
+ 1150  ls -ltr
+ 1151  git log --oneline
+ 1152  git branch
+ 1153  git branch -D test
+ 1154  git status
+ 1155  git branch
+ 1156  git pull origin test
+ 1157  git checkout test
+ 1158  ls -ltr
+ 1159  l
+ 1160  git branch
+ 1161  git branch -D test
+ 1162  git branch
+ 1163  git checkout master
+ 1164  git branch -D test
+ 1165  git branch
+ 1166  git branch -d origin test
+ 1167  git branch -d origin/test
+ 1168  git branch -d origin test
+ 1169  git branch -d origin/test
+ 1170  git checkout test
+ 1171  git branch
+ 1172  git pull origin test
+ 1173  git checkout master
+ 1174  git branch -d origin/test
+ 1175  git branch -d test
+ 1176  git --version
+ 1177  git push
+ 1178  git push origin -d test
+ 1179  ls -ltr
+ 1180  git status
+ 1181  git branch
+ 1182  ls -ltr
+ 1183  git checkout dev
+ 1184  ls -ltr
+ 1185  vi dev3file.txt
+ 1186  ls -ltr
+ 1187  git status
+ 1188  git checkout master
+ 1189  ls -ltr
+ 1190  git checkout dev
+ 1191  ls -ltr
+ 1192  git stash
+ 1193  git status
+ 1194  ls -ltr
+ 1195  git stash -u
+ 1196  git status
+ 1197  ls -ltr
+ 1198  git chekout master
+ 1199  git checkout master
+ 1200  ls -ltr
+ 1201  git checkout dev
+ 1202  ls -ltr
+ 1203  git stash pop
+ 1204  ls -ltr
+ 1205  git status
+ 1206  git add .
+ 1207  git status
+ 1208  ls -trl
+ 1209  git stash
+ 1210  git status
+ 1211  git stash pop
+ 1212  git commit -m "commited" .
+ 1213  git chekout master
+ 1214  git checkout master
+ 1215  ls -ltr
+ 1216  git branch
+ 1217  git checkout dev
+ 1218  ls -ltr
+ 1219  git stash -h
+ 1220  l -ltr
+ 1221  ls -ltr
+ 1222  git branch
+ 1223  ls -ltr
+ 1224  git checkout master
+ 1225  ls
+ 1226  git merge dev
+ 1227  ls
+ 1228  git log
+ 1229  git branch
+ 1230  git checkout dev
+ 1231  vi dev3file.txt
+ 1232  ls
+ 1233  vi dev4file.txt
+ 1234  git add .
+ 1235  git commit -m "dffd" .
+ 1236  git status
+ 1237  ls
+ 1238  git checkout master
+ 1239  ls
+ 1240  git log --oneline
+ 1241  git rebase dev
+ 1242  ls
+ 1243  git log --oneline
+ 1244  git cbranch
+ 1245  git branch
+ 1246  ls
+ 1247  vi masterfile
+ 1248  git add .
+ 1249  git commit -m "commited-2" .
+ 1250  git branch
+ 1251  git checkout dev
+ 1252  git branch
+ 1253  git merge master
+ 1254  ls
+ 1255  cd
+ 1256  rm -rf testrepo/
+ 1257  ls -ltr
+ 1258  git clone https://github.com/salilkul/testrepo.git
+ 1259  cd testrepo/
+ 1260  ls -ltr
+ 1261  vi 22.tt
+ 1262  git add
+ 1263  git add .
+ 1264  git commit -m "sdfsdf" .
+ 1265  ls -ltr
+ 1266  git push origin master
+ 1267  git checkout dev
+ 1268  ls
+ 1269  git merge master
+ 1270  ls
+ 1271  git status

@@ -1,0 +1,246 @@
+ 1180  docker container inspect mycont8
+ 1181  docker container inspect mycont11
+ 1182  docker image ls
+ 1183  docker image pull alpine
+ 1184  docker image tag nginx:2 salilkul87/nginx:2
+ 1185  docker image push salilkul87/nginx:2
+ 1186  docker logout
+ 1187  docker image push salilkul87/nginx:2
+ 1188  docker login
+ 1189* docker image push salilkul87
+ 1190  docker image push nginx:2
+ 1191  docker image tag nginx:2 salilkul87/nginx:2
+   757  docker system prune
+  758  docker container ls -a
+  759  docker image ls
+  760  docker contaier eun -d --name nginxcont nginx:2
+  761  docker contaier run -d --name nginxcont nginx:2
+  762  docker container run -d --name nginxcont nginx:2
+  763  docker container ls
+  764  docker container exec -it nginxcont bash
+  765  docker save nginx:2 > image.tar
+  766  ls -ltr
+  767  date
+  768  ls -ltrh
+  769  date
+  770  docker image ls
+  771  docker image rm nginx:2
+  772  docker image ls
+  773  docker load < image.tar
+  774  docker image ls
+  775  docker container ls
+  776  ocker container exec -it nginxcont baash
+  777  ocker container exec -it nginxcont bash
+  778  docker container exec -it nginxcont bash
+  779  docker container ls
+  780  docker container commit nginxcont testimage
+  781  docker image ls
+  782  docker container ls
+  783  docker container rm -f 8d44d89f5d28
+  784  docker container exec -it --name testcont testimage
+  785  docker container run -it --name testcont testimage
+  786  docker container run -it --name testcont1 testimage bash
+  787  docker container run -it --name testcont1 testimage
+  788  docker container run -it --name testcont2 testimage
+  789  docker container run -d --name testcont2 testimage
+  790  docker container run -d --name testcont3 testimage
+  791  docker container exec -it testcont3 bash
+  792  docker image ls
+  793  #docker container commit nginxcont testimage
+  794  docker login
+  795  cd .docker/
+  796  ls
+  797  cat config.json
+  798  rm config.json
+  799  ls
+  800  docker login
+  801  ls
+  802  su - salil
+  803  cd
+  804  docker image ls
+  805  docker image push testimage
+  806  docker image tag testimage salilkul87/testimage
+  807  docker image ls
+  808  docker image push salilkul87/testimage
+  809  docker image ls
+  810  docker save testimage > arnav.tar
+  811  ls ltr
+  812  ls -ltr
+  813  docker load < arnav.tar
+  814  pwd
+  815  ls
+  816  ls -ltr
+  817  ls -ltra
+  818  cd .docker/
+  819  ls -ltr
+  820  cd
+  821  ls
+  822  rm arnav.tar
+  823  rm image.tar
+  824  rm tmp.tar
+  825  vi /etc/docker/daemon.json
+  826  mkdir  /mnt
+  827  cd /mnt/
+  828  ls
+  829  cd
+  830  systemctl daemon-reload
+  831  systemctl restart docker
+  832  docker container ls
+  833  docker contianer run -d --name test alpine
+  834  docker container run -d --name test alpine
+  835  cd /mnt/
+  836  ls
+  837  cd containers/
+  838  ls
+  839  docker container ls
+  840  docker container ls -a
+  841  cd /var/lib/docker/
+  842  ls
+  843  cd  containers/
+  844  ls
+  845  cat /etc/docker/daemon.json
+  846  ls -ld  /mnt/
+  847  cd
+  848  docker image ls
+  849  cd /var/lib/docker/
+  850  cat /etc/docker/daemon.json
+  851  rm /etc/docker/daemon.json
+  852  systemctl daeom-reload
+  853  systemctl daemon-reload
+  854  systemctl restart docker
+  855  docker image ls
+  856  cd /var/lib/docker/
+  857  ls
+  858  cd image/
+  859  ls
+  860  cd overlay2/
+  861  ls
+  862  cd imagedb/
+  863  ls
+  864  cd content/
+  865  ls
+  866  cd sha256/
+  867  ls
+  868  pwd
+  869  cd /var/lib/docker/
+  870  cd
+  871  history | grep save
+  872  docker contianer ls
+  873  docker container ls
+  874  docker container run -d --name testcont nginx
+  875  docker system prune
+  876  docker container run -d --name testcont nginx
+  877  docker container ls
+  878  hostname -i
+  879  ip a s
+  880  docker container ls
+  881  docker container exec -it testcont bash
+  882  docker inspect testcont
+  883  ip  a s
+  884  docker container ls
+  885  docker container rm -f 637
+  886  docker container ls
+  887  ip  a s
+  888  docker container run -d --name testcont nginx
+  889  ip  a s
+  890  docker container ls
+  891  docker inspect 2ef73bddc23f
+  892  docker container run -d --name testcont1 nginx
+  893  docker inspect testcont1
+  894  docker container run -d --name testcont3 nginx
+  895  docker inspect testcont1
+  896  docker inspect testcont3
+  897  ip a s
+  898  docker network ls
+  899  docker inspect testcont1
+  900  docker network ls
+  901  docker network create mynet
+  902  docker network ls
+  903  ip a s
+  904  docker container run -d --name testcont4 --network mynet nginx
+  905  ip a s
+  906  docker container inspect testcont4
+  907  ip a s
+  908  docker network ls
+  909  docker network create --driver host mynet
+  910  docker network create --driver host mynet1
+  911  docker network create --driver overlay mynet1
+  912  docker netowrk ls
+  913  docker network ls
+  914  ip a s
+  915  docker container run -d --name testcont5 --network host nginx
+  916  docker imspect testcont5
+  917  docker inspect testcont5
+  918  dcker container exec -it testcont5 bash
+  919  docker container exec -it testcont5 bash
+  920  docker container ls
+  921  docker container run -d --name testcont5 --network host nginx
+  922  docker logs testcont5
+  923  netstat -tulnp | grep 80
+  924  kill -9 1916
+  925  docker container run -d --name testcont6 --network host nginx
+  926  docker inspect testcont6
+  927  docker container ls
+  928  docker container exec -it testcont6 bash
+  929  docker container ls
+  930  docker container rm -f testcont6
+  931  docker container ls
+  932  curl localhost
+  933  docker container run -d --name testcont6 --network host nginx
+  934  docker container ls
+  935  curl localhost
+  936  docker container ls
+  937  docker container rm -f testcont6
+  938  curl localhost
+  939  docker network ls
+  940  docker inspect mycont
+  941  docker inspect mycont1
+  942  docker container ls
+  943  docker inspect testcont
+  944  docker container ls
+  945  docker contianer inspect testcont3
+  946  docker container inspect testcont3
+  947  docker container disconnect bridge testcont3
+  948  docker network disconnect bridge testcont3
+  949  docker container ls
+  950  docker inspect testcont3
+  951  docker network connect bridge testcont3
+  952  docker inspect testcont3
+  953  #docker network connect bridge testcont3
+  954  #docker network disconnect bridge testcont3
+  955  docker volume ls
+  956  docker volume rm demo
+  957  docker volume rm myvol
+  958  docker volume ls
+  959  docker volume create myvol
+  960  docker volume ls
+  961  cd /var/lib/docker/
+  962  ls
+  963  cd volumes/
+  964  ls
+  965  cd
+  966  docker container ls
+  967  docker container run -d --name volcont nginx
+  968  docker contianer ls
+  969  docker container ls
+  970  docker container exec -it volcont bash
+  971  docker container rm -f volcont
+  972  docker container run -d --name volcont -p 80:80 -v myvol:/tmp  nginx
+  973  docker container ls
+  974  docker container exec -it volcont bash
+  975  cd /var/lib/docker/volumes/myvol/
+  976  ls
+  977  cd _data/
+  978  ls
+  979  touch basefile
+  980  docker container exec -it volcont bash
+  981  docker container rm -f volcont
+  982  pwd
+  983  ls
+  984  cd
+  985  docker container run -d --name volcont -p 80:80 -v /mnt:/tmp  nginx
+  986  docker container exec -it volcont bash
+  987  cd /mnt/
+  988  ls
+  989  #docker container run -d --name volcont -p 80:80 -v myvol:/tmp  nginx
+  990  #docker container run -d --name volcont -p 80:80 -v /mnt:/tmp  nginx

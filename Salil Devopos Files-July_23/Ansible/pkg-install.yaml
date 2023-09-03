@@ -1,0 +1,20 @@
+- name: Play 1
+  hosts: agent
+  tasks:
+  - name: Execute command ‘date’
+    command: date
+
+  - name: Execute script on server
+    script: test_script.sh
+    ignore_errors: yes
+
+  - name: Install httpd service
+    yum:
+      name: httpd
+      state: present
+
+  - name: Start web server
+    service:
+      name: httpd
+      state: started
+      enabled: yes

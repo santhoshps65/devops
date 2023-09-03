@@ -1,0 +1,122 @@
+    1  yum install java
+    2  yum update
+    3  yum install docker -y
+    4  systemctl start docker
+    5  systemctl status docker
+    6  systemctl enable docker
+    7  wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+    8  sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+    9  yum install -y apache-maven
+   10  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+   11   sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+   12  vi /etc/yum.repos.d/jenkins.repo
+   13  yum install jenkins
+   14  systemctl start jenkins
+   15  systemctl status jenkins
+   16  systemctl enable jenkins
+   17  hostnamectl set-hostname server
+   18  bash
+   19  java --version
+   20  docker --version
+   21  mvn --version
+   22  curl -v localhost
+   23  curl -v localhost:080
+   24  curl -v localhost:8080
+   25  yum install git
+   26  git --version
+   27  cat /var/lib/jenkins/secrets/initialAdminPassword
+   28  cd /var/lib/jenkins
+   29  ls
+   30  ssh 13.232.214.181
+   31  cd
+   32  ssh-keygen
+   33  cd .ssh/
+   34  ls -ltr
+   35  ssh-copy-id 13.232.214.181
+   36  ssh 13.232.214.181
+   37  #ssh-keygen
+   38  #ssh-copy-id 13.232.214.181
+   39  cat id_rsa.pub
+   40  cd
+   41  id jenkins
+   42  su - jenkins
+   43  vi /etc/passwd
+   44  su - jenkins
+   45  cd .ssh
+   46  cat id_rsa
+   47  cd
+   48  su - jenkins
+   49  cd .ssh/
+   50  ls
+   51  ls -lte
+   52  ls -ltr
+   53  rm -rf id_rsa
+   54  rm -rf id_rsa.pub
+   55  su - jenkins
+   56  bash
+   57  cd /var/lib/jenkins/
+   58  ls -ltr
+   59  cd
+   60  systemctl status jenkins
+   61  less /var/log/jenkins/
+   62  less /var/log/journal/b7b1ecbd1b37483a97a36eb02b60f340/system.journal
+   63  less /var/log/jenkins/
+   64  cd /var/log/
+   65  ls
+   66  journalctl -xe
+   67  journalctl -xe | less
+   68  java --version
+   69  cd
+   70  ls -ltr
+   71  id jenkins
+   72  su - jenkins
+   73  vi /etc/passwd
+   74  su - jenkins
+   75  cd /var/lib/
+   76  ls -ld jenkins/
+   77  su - jenkins
+   78  ls -ltr
+   79  cd jenkins/
+   80  ls -ltr
+   81  su - jenkins
+   82  cd /var/lib/jenkins/
+   83  ls
+   84  vi config.xml
+   85  echo $JENKINS_HOME
+   86  vi config.xml
+   87  grep -i -R JENKINS_HOME *
+   88  grep -irl JENKINS_HOME *
+   89  vi config.xml
+   90  cd
+   91  ssh dkdfjkl
+   92  vi /etc/ssh/sshd_config
+   93  hostname -i
+   94  vi /etc/ssh/sshd_config
+   95  setenforce 0
+   96  swapoff -a
+   97  cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   98  [kubernetes]
+   99  name=Kubernetes
+  100  baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+  101  enabled=1
+  102  gpgcheck=1
+  103  repo_gpgcheck=1
+  104  gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+  105  EOF
+  106  yum -v list kubelet --show-duplicates
+  107  yum -v list kubelet --show-duplicate
+  108  yum -v list kubelet --showduplicates
+  109  yum install kubelet-1.20.12-0 kubeadm-1.20.12-0 kubectl-1.20.12-0
+  110  kubeadm init --pod-network-cidr=10.244.0.0/16
+  111  mkdir -p $HOME/.kube
+  112  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  113  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+  114  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  115  systemctl start kubelet
+  116  systemctl start docker
+  117  systemctl enable kubelet
+  118  systemctl enable docker
+  119  kubectl get nodes
+  120  kubectl get po -n kube-system
+  121  systemctl status jenkins
+  122  kubectl get no

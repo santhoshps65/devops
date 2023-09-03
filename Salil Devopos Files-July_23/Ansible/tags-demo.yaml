@@ -1,0 +1,17 @@
+- name: play to demo tags
+  hosts: agent
+  tasks:
+  - name: task to create user  
+    user:
+     name: checkuser
+     state: present
+    tags:
+     - prod
+
+  - name: Run with items greater than 5
+    command: echo {{ item }}
+    loop: [ 0, 2, 4, 6, 8, 10 ]
+    when: item > 5
+    tags:
+      - dev
+

@@ -1,0 +1,18 @@
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install vim curl -y && apt-get install apache2 -y
+LABEL user=sk
+ENV app=dev
+RUN useradd salil
+RUN useradd ganesh
+COPY index.html .
+ADD myfile.txt .
+COPY tmp.tar .
+ADD tmp.tar /var/www/
+#USER salil
+WORKDIR /var/www/html
+#RUN echo "Hello Intellipaat"
+#CMD ["service", "apache2", "start"]
+#CMD [ "echo", "Hello Intelipaat" ]
+#CMD [ "echo", "Good morning" ]
+ENTRYPOINT [ "echo", "Good evening" ]
+ENTRYPOINT [ "echo", "Good morning" ]
